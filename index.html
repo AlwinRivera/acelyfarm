@@ -26,7 +26,7 @@ color:#818181;
 .jumbotron{
 background-color:#92b955;
 color:#fff;
-padding: 100px 25px;
+padding:100px 5px;
 font-family:Montserrat, sans-serif;
 background-image: url(assets/images/mainBg.jpg);
 background-repeat: no-repeat;
@@ -53,6 +53,11 @@ font-size:200px;
 .logo-small{
 color:#91bf2c;
 font-size:50px;
+}
+.full-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .carousel-control.right, .carousel-control.left {
 background-image: none;
@@ -136,16 +141,47 @@ display: block;
   margin-left: -50vw;
   margin-right: -50vw;
 }
+#acelyFarm, h2{
+color:#92b955;
+}
+#acelyFarm:before {
+ color: black;
+ font-weight:bold;
+ content: "WELCOME TO ";
+}
+#aboutAcely, #farmOwner{
+color:#99846e;
+}
+.pull-left{
+margin-left:20px;
+}
 .bg-brown .glyphicon{
 font-size:27px;
+}
+.item h4 {
+font-size: 19px;
+line-height: 1.375em;
+font-weight: 400;
+font-style: italic;
+margin: 70px 0;
+}
+.item span {
+font-style: normal;
+}
+#myComments{
+color:#393939;
 }
 footer .glyphicon {
 font-size: 20px;
 margin-bottom: 20px;
 color: #92b955;
 }
+footer a{
+color:#fff;
+}
 .fa{
 font-size:27px;
+color:#fff;
 }
 .col-sm-3{
 margin-bottom:20px;
@@ -198,7 +234,7 @@ font-size:150px;
 
 <!-- Wrapper for slides -->
 <div class="carousel-inner">
-<div class="item active">
+<div class="item active full-screen">
 <img src="assets/images/mainBg.jpg" alt="Hardware" style="width:100%;height:300px;">
 <div class="carousel-caption">
 <h3><b>EAT CLEAN. EAT ORGANIC</b></h3>
@@ -206,7 +242,7 @@ font-size:150px;
 </div>
 </div>
 
-<div class="item">
+<div class="item full-screen">
 <img src="assets/images/mainBg.jpg" alt="Hardware1" style="width:100%;height:300px;">
 <div class="carousel-caption">
 <h3><b>WELCOME TO ACELY FARM</b></h3>
@@ -214,7 +250,7 @@ font-size:150px;
 </div>
 </div>
 
-<div class="item">
+<div class="item full-screen">
 <img src="assets/images/mainBg.jpg" alt="Hardware2" style="width:100%;height:300px;">
 <div class="carousel-caption">
 <h3><b>FARM FRESH EGGS EVERYDAY</b></h3>
@@ -242,10 +278,10 @@ font-size:150px;
 </div>
 </div>
 <div class="col-sm-6 container-fluid text-center" id="about">
-<h1><strong>WELCOME TO ACELY FARM</strong></h1>
-<h3>“Combining over 100 years of hard work and shared family knowledge”</h3>
+<h1 id="acelyFarm"><strong>ACELY FARM</strong></h1>
+<h3 id="aboutAcely">“Combining over 100 years of hard work and shared family knowledge”</h3>
 <p>Curabitur vitae ullamcorper libe roras id augue felis cras luctus nisi in tincidunt blandit sapien mi vestibulum est commodo lobortis metus mauris vitae purus blandit fermentum quamec eget urna quis sem pharetra ultricies lacinia hendrerit massa non blandit ex accums anenean eleo</p>
-<h4>Alwin Gica / <small>Farm Owner</small></h4>
+<h4 id="farmOwner">Alwin Gica <small>/ Farm Owner</small></h4>
 </div>
 </div>
 </div>
@@ -257,16 +293,16 @@ blandit sapien mi vestibulum est commodo lobortis
 </p><br><br>
 <div class="row">
 <div class="col-sm-3">
-<img src="assets/images/mainBg.jpg" alt="featured product" width="320px" class="img-rounded"/>
+<img src="assets/images/product0.png" alt="featured product" width="320px" class="img-circle"/>
 </div>
 <div class="col-sm-3">
-<img src="assets/images/mainBg.jpg" alt="featured product" width="320px" class="img-rounded"/>
+<img src="assets/images/product1.png" alt="featured product" width="320px" class="img-circle"/>
 </div>
 <div class="col-sm-3">
-<img src="assets/images/mainBg.jpg" alt="featured product" width="320px" class="img-rounded"/>
+<img src="assets/images/product3.png" alt="featured product" width="320px" class="img-circle"/>
 </div>
 <div class="col-sm-3">
-<img src="assets/images/mainBg.jpg" alt="featured product" width="320px" class="img-rounded"/>
+<img src="assets/images/product2.png" alt="featured product" width="320px" class="img-circle"/>
 </div>
 </div>
 </div>
@@ -280,15 +316,15 @@ blandit sapien
 <a href="#" class="pull-left">SEE ALL PRODUCTS</a><br>
 <div class="row">
 <div class="col-sm-4">
-<img src="assets/images/mainBg.jpg" alt="featured product" width="270px" class="img-thumbnail"/>
+<img src="assets/images/faves1.png" alt="featured product" width="270px" class="img-thumbnail"/>
 <h5><small>Vegetables</small><br><br>Cabbage Savoy<br><br> Php 45.75<br></h5>
 </div>
 <div class="col-sm-4">
-<img src="assets/images/mainBg.jpg" alt="featured product" width="270px" class="img-thumbnail"/>
+<img src="assets/images/faves0.png" alt="featured product" width="270px" class="img-thumbnail"/>
 <h5><small>Fruit</small><br><br>Fuji Apple<br><br> Php 10.50<br></h5>
 </div>
 <div class="col-sm-4">
-<img src="assets/images/mainBg.jpg" alt="featured product" width="270px" class="img-thumbnail"/>
+<img src="assets/images/faves2.png" alt="featured product" width="270px" class="img-thumbnail"/>
 <h5><small>Herbs &amp; Salad</small><br><br>Pepper yellow<br><br> Php 49.50<br></h5>
 </div>
 </div>
@@ -353,13 +389,13 @@ blandit sapien
 <div class="container-fluid bg-black">
 <div class="row">
 <div class="col-sm-12">
-<h3 class="pull-left">ACELY FARM</h3><br><div class="clearfix"></div>
+<h3 class="pull-left" id="aboutAcely">ACELY FARM</h3><br><div class="clearfix"></div>
 <p>By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out.</p>
 </div>
 </div>
 <!-- 11.0 Container (contact Section) -->
 <br>
-<h3 class="text-center">INFO</h3>
+<h3 class="text-center" id="aboutAcely">INFO</h3>
 <div class="text-center">
 <p><span class="glyphicon glyphicon-home"></span> &nbsp;3428 Ruby Street, Casal's Village, Mabolo, Cebu City 6000 PHL</p>
 <p><span class="glyphicon glyphicon-time"></span> &nbsp;Mon - Sat: 9.00 - 17.00</p>
